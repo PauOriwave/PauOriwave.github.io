@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Portfolio - Pau Acero</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Introducción -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="images/pau.jpeg" alt="Pau Acero" class="hero-image">
+                <div class="hero-text">
+                    <h1>Pau Acero</h1>
+                    <p class="profession">
+                        Ingeniero de Software Júnior<br>
+                        Desarrollo Full Stack con React y Node.js<br>
+                        Automatización con Python
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Sobre Mí -->
+<section id="about" class="about py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Sobre Mí</h2>
+                <p>Un apasionado desarrollador web con un amor especial por Python. Me encanta transformar ideas en soluciones digitales funcionales y atractivas.</p>
+                <p>Estoy siempre en busca de nuevos desafíos y oportunidades para seguir creciendo como desarrollador.</p>
+            </div>
+            <div class="col-lg-6">
+                <h2>Habilidades</h2>
+                <div class="skill">
+                    <h6>Python & Django</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h6>Web Scraping (Selenium & Beautiful Soup)</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h6>HTML, CSS & JavaScript</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h6>Desarrollo de APIs RESTful</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Proyectos -->
+    <section id="projects" class="projects bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Proyectos</h2>
+            <div id="projectsCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/proyecto1.jpg" alt="Python" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Scraper Artes Marciales</h5>
+                                        <p class="card-text">Busca informacion de las artes marciales de barcelona ( Horarios y precios ).</p>
+                                        <a href="https://github.com/PauOriwave/Dojos_Scrapper" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/proyecto2.jpg" alt="JavaScript" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Picasso Simon</h5>
+                                        <p class="card-text">Juego Simon inspirado en Picasso usando Jacascript</p>
+                                        <a href="https://github.com/PauOriwave/Picasso_Simon_Game"  target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/proyecto3.jpg" alt="Python" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Calculador de calorias</h5>
+                                        <p class="card-text">Calcula las calorias según los ingredientes de las recetas</p>
+                                        <a href="https://github.com/PauOriwave/calculador_calorias" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/proyecto4.jpg" alt="Python" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Generador de contraseñas</h5>
+                                        <p class="card-text">generador de contraseñas complejas usando python</p>
+                                        <a href="https://github.com/PauOriwave/generador_password" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/proyecto5.jpg" alt="JS React" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">To do list Vaporwave</h5>
+                                        <p class="card-text">Aplicación de lista de tareas usando react. Estilo Vaporwave</p>
+                                        <a href="https://github.com/PauOriwave/to_do_list_vaporwave"  target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/proyecto6.jpg" alt="Proyecto 6" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 6</h5>
+                                        <p class="card-text">Descripción del proyecto 6.</p>
+                                        <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev custom-carousel-control" href="#projectsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next custom-carousel-control" href="#projectsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- Experiencia -->
+<section id="experience" class="experience py-5">
+    <div class="container">
+        <h2 class="text-center">Experiencia</h2>
+        <div class="row">
+            <!-- Bekamedia Experience -->
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bekamedia</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Enero 2024 - Julio 2024</h6>
+                        <ul class="list-unstyled">
+                            <li class="rol"><strong>Rol:</strong> Desarrollador Web</li>
+                            <li class="tareas"><strong>Tareas:</strong>
+                                <ul>
+                                    <li>Mantenimiento de la página web.</li>
+                                    <li>Realización de cambios en CSS y JavaScript.</li>
+                                    <li>Creación de landing pages para las películas de Adso Films.</li>
+                                    <li>Desarrollo de scrapers con Python utilizando Selenium y Beautiful Soup para buscar películas de Adso Films en la web.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Freelance Experience -->
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Freelance</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Enero 2023 - Diciembre 2023</h6>
+                        <ul class="list-unstyled">
+                            <li class="rol"><strong>Rol:</strong> Desarrollador web Wordpress</li>
+                            <li class="tareas"><strong>Tareas:</strong>
+                                <ul>
+                                    <li>Creación de sitios web personalizados para diversos clientes utilizando WordPress, adaptando cada proyecto a las necesidades específicas del cliente.</li>
+                                    <li>Investigación y selección de las mejores plantillas de WordPress para cada proyecto, asegurando un diseño atractivo y funcional</li>
+                                    <li>Realización de cambios y ajustes detallados en el diseño de las páginas web mediante CSS para cumplir con las especificaciones del cliente y mejorar la experiencia del usuario.</li>
+                                    <li>Implementación de prácticas SEO básicas en cada sitio web, mejorando la visibilidad en los motores de búsqueda y atrayendo más tráfico.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Educación -->
+<section id="education" class="education bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Educación</h2>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Formación Académica</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">2014-2016 - Batxillerato</h6>
+                                <p class="card-text">Barcelona, IOC Institut Obert de Catalunya</p>
+                            </li>
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">2009-2011 - FP Grado Medio en Laboratorio de Imagen y Fotografía</h6>
+                                <p class="card-text">Barcelona, Escola Oscus</p>
+                            </li>
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">2007-2008 - PQPI Ayudante de Cocina</h6>
+                                <p class="card-text">Barcelona, Escola Pia Sant Antoni</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Cursos y Certificaciones</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">Curso de Desarrollo de Apps Móviles (40H)</h6>
+                                <p class="card-text">Google - 2020</p>
+                            </li>
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">Curso de Cloud Computing (40H)</h6>
+                                <p class="card-text">Google - 2020</p>
+                            </li>
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">Curso de Productividad Personal (40H)</h6>
+                                <p class="card-text">Google - 2020</p>
+                            </li>
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">Fundamentos de Marketing Digital (40H)</h6>
+                                <p class="card-text">Google - 2020</p>
+                            </li>
+                            <li>
+                                <h6 class="card-subtitle mb-2 text-muted">Ciberseguridad en el Teletrabajo (2H)</h6>
+                                <p class="card-text">Google - 2020</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Contacto -->
+   <section id="contact" class="contact py-5">
+    <div class="container">
+        <h2 class="text-center">Contacto</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Pau Acero. Todos los derechos reservados.</p>
+        <div>
+            <a href="https://linkedin.com" target="_blank" class="text-white mr-3"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/PauOriwave" target="_blank" class="text-white mr-3"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
