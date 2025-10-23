@@ -158,8 +158,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-
-
 .education, .experience, .about {
   background-color: #001a10;
   padding: 60px 0;
@@ -172,20 +170,22 @@ h2 {
   box-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
 }
 
-.skill-bar {
-  margin-top: 30px;
-}
-
+/* --- BLOQUE DE SKILLS MEJORADO --- */
 .skill-bar .skill-title {
   font-size: 1.25rem;
   color: #00ff66;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   text-shadow: 0 0 3px #00b34a;
+}
+
+.skill-bar {
+  margin-bottom: 30px; /* ✅ Más espacio entre barras */
 }
 
 .skill-bar .progress {
   background-color: #003311;
-  border-radius: 12px;
+  height: 14px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
 }
 
@@ -196,6 +196,7 @@ h2 {
   color: #001100;
 }
 
+/* --- FOOTER --- */
 footer {
   background-color: #001a10;
   color: #9fffb9;
@@ -214,16 +215,19 @@ footer a:hover {
   text-shadow: 0 0 10px #00ff66;
 }
 
+/* --- NAVBAR PROFESIONAL --- */
 .navbar {
   background-color: #002910;
   box-shadow: 0 0 20px rgba(0, 255, 102, 0.3);
 }
 
 .navbar-brand, .nav-link {
-  color: #00ff66 !important;
-  text-shadow: 0 0 8px #00cc55;
+  color: #e6e6e6 !important; /* Blanco grisáceo elegante */
+  text-shadow: none;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
-.nav-link:hover {
-  text-shadow: 0 0 15px #00ff66;
+.nav-link:hover, .navbar-brand:hover {
+  color: #00ff66 !important; /* Verde Matrix al hover */
+  text-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
 }
