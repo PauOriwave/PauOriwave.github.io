@@ -1,34 +1,44 @@
 body {
-    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
-    background-color: #F4F4F4; /* Gris suave para fondo */
-    color: #0e1419; /* Color oscuro para los textos */
-    padding-top: 56px;
+  font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+  background-color: #000c08; /* Fondo casi negro, tono matrix elegante */
+  color: #d8fbe2; /* Texto claro verdoso */
+  padding-top: 56px;
 }
 
 .col-lg-6 {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .hero {
-    background: linear-gradient(rgba(38, 50, 56, 0.8), rgba(38, 50, 56, 0.8)), url('../images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 120px 0;
-    text-align: center;
-}
-
-.skill{
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-.matrix-banner {
-  width: 100%;
-  height: 180px;
   background: linear-gradient(120deg, #001100, #003300, #001100);
   background-size: 400% 400%;
   animation: flow 12s ease infinite;
   border-radius: 12px;
-  opacity: 0.6;
+  padding: 120px 0;
+  text-align: center;
+  color: #00ff66;
+}
+
+.skill {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.title, .subtitle {
+  color: #00ff66;
+  text-shadow: 0 0 1px #00ff66, 0 0 3px #00cc55;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
 }
 
 @keyframes flow {
@@ -38,192 +48,182 @@ body {
 }
 
 .hero-content {
-    display: flex;
-    align-items: center; /* Alinea verticalmente la imagen y el texto */
-    justify-content: center; /* Centra el contenido en el eje horizontal */
-    gap: 20px; /* Espacio entre la imagen y el texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 12px;
+  opacity: 0.85;
+  overflow: hidden;
 }
 
 .hero-image {
-    width: 150px; /* Ancho de la imagen */
-    height: 150px; /* Altura de la imagen */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    object-fit: cover; /* Asegura que la imagen cubra bien el espacio */
-    border: 4px solid #BDC3C7; /* Borde sutil alrededor de la imagen */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ff66; /* Borde verde */
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.5);
 }
 
 .hero-text h1 {
-    font-size: 3.5rem; /* Tamaño de fuente para el nombre */
-    text-shadow: 0 0 10px #1d1d1d; /* Sombra sutil para el nombre */
-    color: #ffffff; /* Color del nombre */
+  font-size: 3.5rem;
+  color: #e6ffe6;
+  text-shadow: 0 0 6px #00cc55;
 }
 
 .profession {
-    font-size: 1.5rem; /* Tamaño más pequeño para la profesión */
-    color: #010101; /* Gris suave para la profesión */
-    margin-top: 10px; /* Espacio entre el nombre y la descripción */
-    line-height: 1.5; /* Espacio entre las líneas */
-    text-align: center; /* Centrado del texto */
-}
-
-.hero h1 {
-    font-size: 4rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  color: #9fffb9;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .btn-primary {
-    background-color: #34495E; /* Azul oscuro */
-    border-color: #34495E;
-    color: #FFFFFF;
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6); /* Azul sutil */
-    transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: #006633;
+  border-color: #00ff66;
+  color: #e6ffe6;
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #2C3E50; /* Azul más oscuro */
-    box-shadow: 0 0 25px rgba(52, 152, 219, 0.8);
+  background-color: #00b34a;
+  box-shadow: 0 0 25px rgba(0, 255, 102, 0.5);
 }
 
 section {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 h2 {
-    color: #000000; /* Un tono oscuro para los títulos */
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #00ff66;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px #00cc55;
 }
 
-/* Títulos en secciones específicas (Proyectos, Educación, etc.) */
-.education h2,
-.projects h2 {
-    color: #2C3E50; /* Color más oscuro para mayor visibilidad */
-    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+.education h2, .projects h2 {
+  color: #00e65c;
+  text-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
 }
 
 .projects .card {
-    height: 300px; /* Altura fija */
-    max-width: 350px; /* Ancho máximo para todos los contenedores */
-    margin: auto; /* Centra el contenedor */
-    background: #FFFFFF; /* Fondo blanco */
-    border: 2px solid #34495E; /* Borde azul oscuro */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.1); /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Asegúrate de que la transición esté aquí */
-    color: #000000; /* Texto oscuro */
-    margin-bottom: 40px;
+  height: 300px;
+  max-width: 350px;
+  margin: auto;
+  background: #001a10;
+  border: 2px solid #00b34a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 102, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e6ffe6;
+  margin-bottom: 40px;
 }
 
 .projects .card:hover {
-    transform: translateY(30px); /* Se eleva ligeramente */
-    transition: transform 1s ease;
-    box-shadow: 0 0 40px rgba(52, 152, 219, 0.3); /* Sombra más intensa */
-    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 102, 0.4);
+  cursor: pointer;
 }
 
 .projects .card img {
-    max-height: 200px; /* Altura máxima de la imagen */
-    width: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
+  max-height: 200px;
+  width: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .card-title {
-    font-size: 1.75rem;
-    color: #000000; /* Títulos de las tarjetas */
-    margin-bottom: 15px;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  font-size: 1.75rem;
+  color: #000000;
+  margin-bottom: 15px;
+  text-shadow: 0 0 1px #00cc55;
 }
 
 .card-subtitle {
-    font-size: 1.25rem;
-    color: #010101; /* Gris suave */
-    margin-bottom: 15px;
-}
-
-.card-body ul {
-    padding-left: 0;
-    list-style-type: none;
+  font-size: 1.25rem;
+  color: #9fffb9;
+  margin-bottom: 15px;
 }
 
 .card-body li {
-    font-size: 1rem;
-    color: #7F8C8D; /* Gris para la lista */
-    margin-bottom: 10px;
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
-/* Secciones de educación, experiencia y sobre mí */
+
+
 .education, .experience, .about {
-    background-color: #FFFFFF; /* Fondo blanco */
-    padding: 60px 0;
-    border-top: 1px solid #BDC3C7; /* Línea gris suave */
+  background-color: #001a10;
+  padding: 60px 0;
+  border-top: 1px solid #004422;
 }
 
 .about img {
-    border: 3px solid #34495E; /* Borde azul oscuro */
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.4);
+  border: 3px solid #00cc55;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
 }
 
 .skill-bar {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .skill-bar .skill-title {
-    font-size: 1.25rem;
-    color: #2C3E50; /* Un color más oscuro para las barras */
-    margin-bottom: 10px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  font-size: 1.25rem;
+  color: #00ff66;
+  margin-bottom: 10px;
+  text-shadow: 0 0 3px #00b34a;
 }
 
 .skill-bar .progress {
-    background-color: #ECF0F1; /* Gris claro */
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.2);
+  background-color: #003311;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
 }
 
 .skill-bar .progress-bar {
-    background-color: #34495E; /* Azul oscuro */
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
-    font-size: 1rem;
+  background: linear-gradient(90deg, #00ff66, #00cc55);
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+  font-size: 1rem;
+  color: #001100;
 }
 
 footer {
-    background-color: #2C3E50; /* Fondo azul oscuro */
-    color: #FFFFFF; /* Blanco */
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 -5px 20px rgba(52, 152, 219, 0.2);
+  background-color: #001a10;
+  color: #9fffb9;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -5px 20px rgba(0, 255, 102, 0.2);
 }
 
 footer a {
-    color: #BDC3C7; /* Gris claro */
-    transition: color 0.3s, text-shadow 0.3s;
+  color: #00ff66;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 footer a:hover {
-    color: #FFFFFF; /* Blanco */
-    text-shadow: 0 0 10px rgba(52, 152, 219, 0.8); /* Azul claro en hover */
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ff66;
 }
 
 .navbar {
-    background-color: #34495E; /* Azul oscuro */
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
+  background-color: #002910;
+  box-shadow: 0 0 20px rgba(0, 255, 102, 0.3);
 }
 
 .navbar-brand, .nav-link {
-    color: #FFFFFF !important; /* Blanco */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  color: #00ff66 !important;
+  text-shadow: 0 0 8px #00cc55;
 }
 
 .nav-link:hover {
-    text-shadow: 0 0 20px rgba(52, 152, 219, 0.8); /* Sombra azul en hover */
+  text-shadow: 0 0 15px #00ff66;
 }
