@@ -1,7 +1,7 @@
 body {
-  font-family: 'Orbitron', sans-serif; /* Fuente futurista */
-  background-color: #000c08; /* Fondo casi negro, tono matrix elegante */
-  color: #d8fbe2; /* Texto claro verdoso */
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000c08;
+  color: #d8fbe2;
   padding-top: 56px;
 }
 
@@ -17,11 +17,6 @@ body {
   padding: 120px 0;
   text-align: center;
   color: #00ff66;
-}
-
-.skill {
-  margin-top: 2px;
-  margin-bottom: 2px;
 }
 
 .title, .subtitle {
@@ -58,19 +53,28 @@ body {
   overflow: hidden;
 }
 
+/* --- IMAGEN DE PERFIL CON CONTORNO NEGRO --- */
 .hero-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #00ff66; /* Borde verde */
-  box-shadow: 0 0 10px rgba(0, 255, 102, 0.5);
+  box-shadow:
+    0 0 10px rgba(0, 255, 102, 0.5),
+    0 0 0 4px #000; /* Contorno negro externo */
 }
 
+/* --- NOMBRE CON CONTORNO NEGRO --- */
 .hero-text h1 {
   font-size: 3.5rem;
   color: #e6ffe6;
-  text-shadow: 0 0 6px #00cc55;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    0 0 6px #00cc55; /* efecto neón verde encima del contorno */
 }
 
 .profession {
@@ -170,7 +174,7 @@ h2 {
   box-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
 }
 
-/* --- BLOQUE DE SKILLS MEJORADO --- */
+/* --- SKILL BAR --- */
 .skill-bar .skill-title {
   font-size: 1.25rem;
   color: #00ff66;
@@ -179,7 +183,7 @@ h2 {
 }
 
 .skill-bar {
-  margin-bottom: 30px; /* ✅ Más espacio entre barras */
+  margin-bottom: 35px; /* más espacio entre barras */
 }
 
 .skill-bar .progress {
@@ -196,7 +200,6 @@ h2 {
   color: #001100;
 }
 
-/* --- FOOTER --- */
 footer {
   background-color: #001a10;
   color: #9fffb9;
@@ -222,12 +225,12 @@ footer a:hover {
 }
 
 .navbar-brand, .nav-link {
-  color: #e6e6e6 !important; /* Blanco grisáceo elegante */
+  color: #e6e6e6 !important;
   text-shadow: none;
   transition: color 0.3s, text-shadow 0.3s;
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  color: #00ff66 !important; /* Verde Matrix al hover */
+  color: #00ff66 !important;
   text-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
 }
