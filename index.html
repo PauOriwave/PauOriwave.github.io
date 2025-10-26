@@ -317,27 +317,57 @@
 </section>
 
 
-   <!-- Contacto -->
-   <section id="contact" class="contact py-5">
-    <div class="container">
-        <h2 class="text-center">Contacto</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </div>
+<!-- Contacto -->
+<section id="contact" class="contact py-5">
+  <div class="container">
+    <h2 class="text-center">Contacto</h2>
+
+    <form 
+      action="https://formspree.io/f/mkgpgzlr" 
+      method="POST" 
+      id="contact-form" 
+      class="contact-form"
+    >
+      <div class="form-group">
+        <input 
+          type="text" 
+          name="name" 
+          class="form-control" 
+          placeholder="Tu nombre" 
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <input 
+          type="email" 
+          name="email" 
+          class="form-control" 
+          placeholder="Tu correo electrónico" 
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <textarea 
+          name="message" 
+          class="form-control" 
+          rows="5" 
+          placeholder="Tu mensaje..." 
+          required
+        ></textarea>
+      </div>
+
+      <!-- Honeypot invisible para bots -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="btn btn-primary">
+        Enviar mensaje
+      </button>
+    </form>
+  </div>
 </section>
+
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
